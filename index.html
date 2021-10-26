@@ -6,45 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cabellos</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <nav>
-        <h2><a href="index.html">Cabellos</a></h2>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="./pages/Peinados/index.html">Peinados</a></li>
-            <li><a href="./pages/MiPelo/index.html">MiPelo</a></li>
-            <li><a href="./pages/MiCorte/index.html">MiCorte</a></li>
-        </ul>
-    </nav>
     <header>
-        <h1>Paz en tu Estilo</h1>
-        <!-- <img src="" alt=""> -->
+        <nav>
+            <h2><a href="index.html" class="nav-item">Cabellos</a></h2>
+            <ul>
+                <li><a href="index.html" class="nav-item">Inicio</a></li>
+                <li><a href="pages/peinados.html" class="nav-item">Peinados</a></li>
+                <li><a href="pages/suciencia.html" class="nav-item">SuCiencia</a></li>
+                <li><a href="pages/mipelo.html" class="nav-item">MiPelo</a></li>
+                <li><a href="pages/micorte.html" class="nav-item">MiCorte</a></li>
+            </ul>
+        </nav>
+        <div class="cover-page">
+            <h1>Paz en tu Estilo</h1>
+            <!-- <img src="" alt=""> -->
+        </div>
     </header>
     <main>
         <section>
             <!-- <img src="" alt=""> -->
-            <h3>Descubre variedad de <a href="./pages/Peinados/index.html">Peinados</a></h3>
+            <h3 class="titles">Descubre <br>la variedad <br>de <a href="./pages/peinados.html">Peinados</a></h3>
         </section>
         <section>
-            <h4>Comunica tu estilo al <a href="./pages/MiCorte/index.html">Peluquero</a></h4>
+            <!-- <img src="" alt=""> -->
+            <h4 class="titles">Conecta <br>con tu cabello <br>desde <a href="./pages/suciencia.html">su Ciencia</a></h4>
+        </section>
+        <section>
+            <h5 class="titles">Envia <br>tu estilo <br>al <a href="./pages/micorte.html">Peluquero</a></h5>
             <!-- <img src="" alt=""> -->
         </section>
         <section>
-            <h5>Observa tu evolución <a href="./pages/MiPelo/index.html">con el Historial</a></h5>
+            <h6 class="titles">Observa <br>tu evolución <br>con el <a href="./pages/mipelo.html">Historial</a></h6>
         </section>
     </main>
     <footer>
         <div>
             <!-- logo -->
+            <strong>Cabellos</strong>
             <div>
                 <!-- Social Media Links -->
             </div>
         </div>
         <div>
-            <span>Comentarios</span>
-            <!-- <textarea name="comentarios" id="comments" cols="30" rows="10"></textarea> -->
+            <strong>Contacto</strong>
+            <form action="">
+                <label for="name">Nombre</label><br>
+                <input type="text" name="name" /><br>
+                <label for="email">E-mail</label><br>
+                <input type="email" name="email" /><br>
+                <label for="comment">Comentarios</label><br>
+                <textarea name="comment" cols="20" rows="4"></textarea>
+            </form>
         </div>
     </footer>
 </body>

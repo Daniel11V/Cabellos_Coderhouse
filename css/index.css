@@ -1,0 +1,54 @@
+
+body {
+    font-family: sistem-ui, sans-serif;
+    margin: 0;
+}
+
+
+/* Header */
+
+nav {
+    background-color: rgb(72, 12, 168);
+    padding: 10px 5px;
+}
+
+nav * {
+    display: inline;
+    margin: 5px;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.cover-page {
+    padding: 30px;
+}
+
+
+/* Main */
+
+main {
+    margin: 20px;
+}
+
+.titles {
+    font-style: italic; 
+}
+
+
+main a {
+    color: rgb(72, 12, 168);
+}
+
+
+/* Footer */
+
+footer {
+    background-color: rgb(72, 12, 168);
+    color: #fff;
+    padding: 20px;
+}
+
