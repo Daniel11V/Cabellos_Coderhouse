@@ -7,12 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cabellos</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
         <nav>
-            <h2><a href="index.html" class="nav-item">Cabellos</a></h2>
+            <div>
+                <h2><a href="index.html" class="nav-item">Cabellos</a></h2>
+                <!-- <img src="img/logo.jpg" alt="logo"> -->
+            </div>
             <ul>
                 <li><a href="index.html" class="nav-item">Inicio</a></li>
                 <li><a href="pages/peinados.html" class="nav-item">Peinados</a></li>
@@ -21,45 +26,50 @@
                 <li><a href="pages/micorte.html" class="nav-item">MiCorte</a></li>
             </ul>
         </nav>
-        <div class="cover-page">
-            <h1>Paz en tu Estilo</h1>
-            <!-- <img src="" alt=""> -->
+        <div class="cover-page" id="portada">
+            <h1>Paz <br>en tu <br>Estilo</h1>
         </div>
     </header>
     <main>
-        <section>
-            <!-- <img src="" alt=""> -->
+        <section id="peinados">
             <h3 class="titles">Descubre <br>la variedad <br>de <a href="./pages/peinados.html">Peinados</a></h3>
         </section>
-        <section>
-            <!-- <img src="" alt=""> -->
+        <section id="suciencia">
             <h4 class="titles">Conecta <br>con tu cabello <br>desde <a href="./pages/suciencia.html">su Ciencia</a></h4>
         </section>
-        <section>
+        <section id="micorte">
             <h5 class="titles">Envia <br>tu estilo <br>al <a href="./pages/micorte.html">Peluquero</a></h5>
-            <!-- <img src="" alt=""> -->
         </section>
-        <section>
+        <section id="mipelo">
             <h6 class="titles">Observa <br>tu evolución <br>con el <a href="./pages/mipelo.html">Historial</a></h6>
         </section>
     </main>
     <footer>
         <div>
             <!-- logo -->
-            <strong>Cabellos</strong>
-            <div>
+            <div class="logo">Cabellos</div>
+            <div id="social-media-links">
                 <!-- Social Media Links -->
+                <i class="fab fa-twitter fa-2x"></i>
+                <i class="fab fa-facebook fa-2x"></i>
+                <i class="fab fa-instagram fa-2x"></i>
+                <i class="fab fa-whatsapp fa-2x"></i>
             </div>
         </div>
         <div>
-            <strong>Contacto</strong>
+            <div id="contact">Contacto</div>
             <form action="">
-                <label for="name">Nombre</label><br>
-                <input type="text" name="name" /><br>
-                <label for="email">E-mail</label><br>
-                <input type="email" name="email" /><br>
-                <label for="comment">Comentarios</label><br>
-                <textarea name="comment" cols="20" rows="4"></textarea>
+                <div class="columns">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" />
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" />
+                </div>
+                <div class="columns">
+                    <label for="comment">Comentarios</label>
+                    <textarea name="comment" cols="20" rows="5"></textarea>
+                </div>
+                <input id="submit" type="submit" value="Enviar">
             </form>
         </div>
     </footer>

@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cabellos</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
@@ -22,30 +24,39 @@
             </ul>
         </nav>
         <div class="cover-page">
-            <h1 class="titles">MiPelo</h1>
+            <h1>MiPelo</h1>
             <!-- <img src="" alt=""> -->
         </div>
     </header>
-    <main>
+    <main class="container">
 
     </main>
     <footer>
         <div>
             <!-- logo -->
-            <strong>Cabellos</strong>
-            <div>
+            <div class="logo">Cabellos</div>
+            <div id="social-media-links">
                 <!-- Social Media Links -->
+                <i class="fab fa-twitter fa-2x"></i>
+                <i class="fab fa-facebook fa-2x"></i>
+                <i class="fab fa-instagram fa-2x"></i>
+                <i class="fab fa-whatsapp fa-2x"></i>
             </div>
         </div>
         <div>
-            <strong>Contacto</strong>
+            <div id="contact">Contacto</div>
             <form action="">
-                <label for="name">Nombre</label><br>
-                <input type="text" name="name" /><br>
-                <label for="email">E-mail</label><br>
-                <input type="email" name="email" /><br>
-                <label for="comment">Comentarios</label><br>
-                <textarea name="comment" cols="20" rows="4"></textarea>
+                <div class="columns">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" />
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" />
+                </div>
+                <div class="columns">
+                    <label for="comment">Comentarios</label>
+                    <textarea name="comment" cols="20" rows="5"></textarea>
+                </div>
+                <input id="submit" type="submit" value="Enviar">
             </form>
         </div>
     </footer>
