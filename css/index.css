@@ -35,7 +35,7 @@ nav ul {
 }
 
 .cover-page {
-    background: url("../img/portada.jpg") no-repeat center center;
+    background: url("../img/portadas/portada.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -86,7 +86,7 @@ main a {
 }
 
 #peinados {
-    background: url("../img/peinados.jpg") no-repeat left center;
+    background: url("../img/portadas/peinados.jpg") no-repeat left center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -98,7 +98,7 @@ main a {
 }
 
 #suciencia {
-    background: url("../img/suciencia.jpg") no-repeat left center;
+    background: url("../img/portadas/suciencia.jpg") no-repeat left center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -112,7 +112,7 @@ main a {
 }
 
 #micorte {
-    background: url("../img/micorte.jpg") no-repeat left center;
+    background: url("../img/portadas/micorte.jpg") no-repeat left center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -124,7 +124,7 @@ main a {
 }
 
 #mipelo {
-    background: url("../img/mipelo.jpg") no-repeat right center;
+    background: url("../img/portadas/mipelo.jpg") no-repeat right center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -135,6 +135,51 @@ main a {
 #mipelo .titles {
     left: 0;
     transform: scaleX(-1);
+}
+
+
+/* Peinados */
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2em;
+    margin-top: 20px;
+}
+
+.peinado {
+    border: 6px solid rgb(72, 12, 168);
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.peinado:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.peinado img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.peinado:nth-child(1) img, 
+.peinado:nth-child(2) img {
+    left: -110px;
+}
+
+.peinado:nth-child(6) img {
+    width: 100%;
+}
+
+.peinado:nth-child(9) img {
+    height: 135%;
+    left: -70px;
+    top: -25px;
 }
 
 
@@ -164,10 +209,6 @@ footer #social-media-links {
 
 footer #social-media-links * {
     cursor: pointer;
-}
-
-footer:second-child {
-    display: flex;
 }
 
 footer #contact {
@@ -228,7 +269,7 @@ footer #submit {
         margin-bottom: 50px;
     }
 
-    footer:first-child {
+    footer div:first-child {
         height: max-content;
         align-self: center;
     }
