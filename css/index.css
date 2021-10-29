@@ -22,6 +22,11 @@ nav li, nav h2 {
     display: inline-block;
     list-style: none;
     margin: 0 15px;
+    transition: all 0.2s;
+}
+
+nav li:hover {
+    transform: scale(1.1);
 }
 
 nav ul {
@@ -83,6 +88,11 @@ section {
 
 main a {
     color: rgb(72, 12, 168);
+    transition: color 0.3s ease-in;
+}
+
+main a:hover {
+    color: #ffffff;
 }
 
 #peinados {
@@ -148,16 +158,31 @@ main a {
 }
 
 .peinado {
-    border: 6px solid rgb(72, 12, 168);
     border-radius: 25px;
     position: relative;
-    overflow: hidden;
+    cursor: pointer;
+    background-color: rgb(72, 12, 168);
 }
 
 .peinado:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.peinado .float-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 6px solid rgb(72, 12, 168);
+    transition: transform 0.5s ease;
+    overflow: hidden;
+    cursor:pointer;
+    border-radius: 25px;
+}
+
+.peinado:hover .float-img {
+    transform: translate(-15px, -15px);
 }
 
 .peinado img {
@@ -209,6 +234,11 @@ footer #social-media-links {
 
 footer #social-media-links * {
     cursor: pointer;
+    transition: all 0.2s;
+}
+
+footer #social-media-links *:hover {
+    transform: translate(5px, 5px);
 }
 
 footer #contact {
