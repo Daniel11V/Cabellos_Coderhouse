@@ -13,6 +13,7 @@ body {
 
 nav {
     background-color: rgb(72, 12, 168);
+    background: linear-gradient(90deg, rgb(139 26 175), rgba(130,0,255,1));
     padding: 10px 5px;
     display: flex;
     justify-content: space-between;
@@ -212,6 +213,7 @@ main a:hover {
 
 footer {
     background-color: rgb(72, 12, 168);
+    background: linear-gradient(90deg, rgb(139 26 175), rgba(130,0,255,1));
     color: #fff;
     padding: 20px;
     font-size: 1.5em;
