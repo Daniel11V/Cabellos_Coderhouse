@@ -2,6 +2,24 @@
     font-family: sistem-ui, sans-serif;
 }
 
+
+/* Header */
+
+nav {
+    background-color: rgb(72, 12, 168);
+    background: linear-gradient(90deg, rgb(139 26 175), rgba(130,0,255,1));
+}
+
+.nav-item {
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 800 !important;
+}
+
+.navbar-toggler-icon {
+    color: #fff !important;
+}
+
 .cover-page {
     background: url(../img/portadas/portada.jpg) no-repeat center center;
     -webkit-background-size: cover;
@@ -20,10 +38,147 @@ h1 {
 }
 
 
+/* Main */
+
+section {
+    position: relative;
+    height: 40em;
+    background: rgb(235,239,242);
+    padding: 10vw;
+}
+
+.titles {
+    font-style: italic; 
+    font-size: 3em;
+    position: absolute;
+    color: rgb(86, 55, 139);
+    background: rgba(235, 239, 242, 0.658);
+    padding: 25px;
+    border-radius: 15px;
+    top: 2em;
+    margin: 10vw;
+}
+
+main a {
+    color: rgb(72, 12, 168);
+    transition: color 0.3s ease-in;
+}
+
+main a:hover {
+    color: #ffffff;
+}
+
+#peinados {
+    background: url("../img/portadas/peinados.jpg") no-repeat left center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#peinados .titles {
+    right: 0;
+}
+
+#suciencia {
+    background: url("../img/portadas/suciencia.jpg") no-repeat left center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    transform: scaleX(-1);
+}
+
+#suciencia .titles {
+    right: 0;
+    transform: scaleX(-1);
+}
+
+#micorte {
+    background: url("../img/portadas/micorte.jpg") no-repeat left center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#micorte .titles {
+    left: 0;
+}
+
+#mipelo {
+    background: url("../img/portadas/mipelo.jpg") no-repeat right center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    transform: scaleX(-1);
+}
+
+#mipelo .titles {
+    left: 0;
+    transform: scaleX(-1);
+}
 
 
+/* Peinados */
 
+.images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2em;
+    margin-top: 20px;
+}
 
+.peinado {
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    background-color: rgb(72, 12, 168);
+}
+
+.peinado:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.peinado .float-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 6px solid rgb(72, 12, 168);
+    transition: transform 0.5s ease;
+    overflow: hidden;
+    cursor:pointer;
+    border-radius: 25px;
+}
+
+.peinado:hover .float-img {
+    transform: translate(-15px, -15px);
+}
+
+.peinado img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.peinado:nth-child(1) img, 
+.peinado:nth-child(2) img {
+    left: -110px;
+}
+
+.peinado:nth-child(6) img {
+    width: 100%;
+}
+
+.peinado:nth-child(9) img {
+    height: 135%;
+    left: -70px;
+    top: -25px;
+}
 
 
 footer {

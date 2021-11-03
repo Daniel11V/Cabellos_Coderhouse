@@ -15,23 +15,36 @@
 </head>
 
 <body>
+
+    <!-- Header -->
     <header>
-        <nav>
-            <h2><a href="../index.html" class="nav-item">Cabellos</a></h2>
-            <ul>
-                <li><a href="../index.html" class="nav-item">Inicio</a></li>
-                <li><a href="./peinados.html" class="nav-item">Peinados</a></li>
-                <li><a href="./suciencia.html" class="nav-item">SuCiencia</a></li>
-                <li><a href="./mipelo.html" class="nav-item">MiPelo</a></li>
-                <li><a href="./micorte.html" class="nav-item">MiCorte</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand nav-item" href="../index.html">Cabellos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav fw-bolder">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="peinados.html">Peinados</a>
+                        <a class="nav-link" href="suciencia.html">SuCiencia</a>
+                        <a class="nav-link" href="mipelo.html">MiPelo</a>
+                        <a class="nav-link" href="micorte.html">MiCorte</a>
+                    </div>
+                </div>
+            </div>
         </nav>
         <div class="cover-page">
-            <h1>Peinados</h1>
+            <h1 class="pt-3 ps-4 fw-bold display-2">Peinados</h1>
             <!-- <img src="" alt=""> -->
         </div>
     </header>
-    <main class="container">
+
+    <!-- Main -->
+    <main class="container my-5">
         <h2>Descubre la variedad de opciones</h2>
         <div class="images">
             <div class="peinado">
@@ -82,33 +95,47 @@
         </div>
     </main>
 
-    <footer>
-        <div>
-            <!-- logo -->
-            <div class="logo">Cabellos</div>
-            <div id="social-media-links">
-                <!-- Social Media Links -->
-                <i class="fab fa-twitter fa-2x"></i>
-                <i class="fab fa-facebook fa-2x"></i>
-                <i class="fab fa-instagram fa-2x"></i>
-                <i class="fab fa-whatsapp fa-2x"></i>
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <div class="row row-cols-1 row-cols-sm-2 py-3 px-2 justify-content-between align-items-center">
+            <div class="col-12 col-sm-6 col-lg-5 col-xl-4 mb-3">
+                <!-- logo -->
+                <div class="logo-box mx-auto">
+                    <div class="logo fw-bold display-1">Cabellos</div>
+                    <div id="social-media-links" class="row justify-content-between m-0">
+                        <!-- Social Media Links -->
+                        <i class="fab fa-twitter fa-2x col-2"></i>
+                        <i class="fab fa-facebook fa-2x col-2"></i>
+                        <i class="fab fa-instagram fa-2x col-2"></i>
+                        <i class="fab fa-whatsapp fa-2x col-2"></i>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div>
-            <div id="contact">Contacto</div>
-            <form action="">
-                <div class="columns">
-                    <label for="name">Nombre</label>
-                    <input type="text" name="name" />
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" />
-                </div>
-                <div class="columns">
-                    <label for="comment">Comentarios</label>
-                    <textarea name="comment" cols="20" rows="5"></textarea>
-                </div>
-                <input id="submit" type="submit" value="Enviar">
-            </form>
+            <div class="col-12 col-sm-6 col-lg-5 col-xl-4 mt-1">
+                <span id="contact" class="fw-bold fs-4">Contacto</span>
+                <form action="#">
+                    <div class="row row-cols-1 row-cols-sm-2 mt-1">
+                        <div class="col">
+                            <div class="input-group input-group-sm mb-3">
+                                <input type="text" class="form-control" id="floatingInputValue" placeholder="Nombre">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group input-group-sm mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="email@ejemplo.com">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <textarea class="form-control" placeholder="Deja aqui tu comentario" id="floatingTextarea2"
+                            style="height: 77px"></textarea>
+                    </div>
+                    <div class="d-grid mb-3">
+                        <input type="submit" class="btn btn-dark fw-bold btn-sm" id="floatingSubmit" value="Enviar">
+                    </div>
+                </form>
+            </div>
         </div>
     </footer>
 
