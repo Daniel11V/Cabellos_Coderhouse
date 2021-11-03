@@ -16,10 +16,6 @@ nav {
     font-weight: 800 !important;
 }
 
-.navbar-toggler-icon {
-    color: #fff !important;
-}
-
 .cover-page {
     background: url(../img/portadas/portada.jpg) no-repeat center center;
     -webkit-background-size: cover;
