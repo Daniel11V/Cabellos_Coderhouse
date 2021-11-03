@@ -62,34 +62,42 @@
     </main>
     <!-- Footer -->
     <footer class="container-fluid">
-        <div class="row row-cols-1 row-cols-sm-2 py-3 px-2 justify-content-between">
-            <div class="col-12 col-sm-6 col-lg-5 col-xl-4 mb-3 text-center">
+        <div class="row row-cols-1 row-cols-sm-2 py-3 px-2 justify-content-between align-items-center">
+            <div class="col-12 col-sm-6 col-lg-5 col-xl-4 mb-3">
                 <!-- logo -->
-                <div class="logo fw-bold display-1 mx-auto">Cabellos</div>
-                <div id="social-media-links mx-auto">
-                    <!-- Social Media Links -->
-                    <i class="fab fa-twitter fa-2x"></i>
-                    <i class="fab fa-facebook fa-2x"></i>
-                    <i class="fab fa-instagram fa-2x"></i>
-                    <i class="fab fa-whatsapp fa-2x"></i>
+                <div class="logo-box mx-auto">
+                    <div class="logo fw-bold display-1">Cabellos</div>
+                    <div id="social-media-links" class="row justify-content-between m-0">
+                        <!-- Social Media Links -->
+                        <i class="fab fa-twitter fa-2x col-2"></i>
+                        <i class="fab fa-facebook fa-2x col-2"></i>
+                        <i class="fab fa-instagram fa-2x col-2"></i>
+                        <i class="fab fa-whatsapp fa-2x col-2"></i>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-5 col-xl-4">
-                <span id="contact" class="fw-bold">Contacto</span>
-                <form class="row row-cols-1 row-cols-sm-2" action="#">
-                    <div class="col">
-                        <div class="input-group input-group-sm mb-3">
-                            <input type="text" class="form-control" id="floatingInputValue" placeholder="Nombre">
+            <div class="col-12 col-sm-6 col-lg-5 col-xl-4 mt-1">
+                <span id="contact" class="fw-bold fs-4">Contacto</span>
+                <form action="#">
+                    <div class="row row-cols-1 row-cols-sm-2 mt-1">
+                        <div class="col">
+                            <div class="input-group input-group-sm mb-3">
+                                <input type="text" class="form-control" id="floatingInputValue" placeholder="Nombre">
+                            </div>
                         </div>
-                        <div class="input-group input-group-sm mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="email@ejemplo.com">
+                        <div class="col">
+                            <div class="input-group input-group-sm mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="email@ejemplo.com">
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="input-group input-group-sm mb-3">
-                            <textarea class="form-control" placeholder="Deja aqui tu comentario" id="floatingTextarea2"
-                                style="height: 77px"></textarea>
-                        </div>
+                    <div class="input-group input-group-sm mb-3">
+                        <textarea class="form-control" placeholder="Deja aqui tu comentario" id="floatingTextarea2"
+                            style="height: 77px"></textarea>
+                    </div>
+                    <div class="d-grid mb-3">
+                        <input type="submit" class="btn btn-dark fw-bold btn-sm" id="floatingSubmit" value="Enviar">
                     </div>
                 </form>
             </div>

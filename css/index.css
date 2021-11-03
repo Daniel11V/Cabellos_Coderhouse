@@ -19,6 +19,28 @@ h1 {
     /* margin: 1% 2%; */
 }
 
-#portada h1 {
-    /* margin: 1 7%; */
+
+
+
+
+
+
+
+footer {
+    background-color: rgb(72, 12, 168);
+    background: linear-gradient(90deg, rgb(139 26 175), rgba(130,0,255,1));
+    color: #fff;
+}
+
+footer .logo-box {
+    max-width: min-content;
+}
+
+footer #social-media-links * {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+footer #social-media-links *:hover {
+    transform: translate(5px, 5px);
 }
