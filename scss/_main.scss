@@ -1,0 +1,138 @@
+/* Main */
+
+
+/* Home Page */
+
+.home {
+
+    section {
+        position: relative;
+        height: 40em;
+        padding: 10vw;
+
+        .titles {
+            font-style: italic; 
+            font-size: 3em;
+            position: absolute;
+            color: $light-primary-color;
+            background: $bg-title-transparent;
+            padding: 25px;
+            border-radius: 15px;
+            top: 2em;
+            margin: 10vw;
+
+            a {
+                color: $primary-color;
+                transition: color 0.3s ease-in;
+
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    @mixin section-bg ($section, $direction) {
+        background: rgb(235,239,242);
+        background: url("../img/portadas/#{$section}.jpg") no-repeat $direction center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    &__suciencia {
+        @include section-bg("suciencia", left);
+        transform: scaleX(-1);
+
+        .titles {
+            right: 0;
+            transform: scaleX(-1);
+        }
+    }
+
+    &__micorte {
+        @include section-bg("micorte", left);
+
+        .titles {
+            left: 0;
+        }
+    }
+
+    &__mipelo {
+        @include section-bg("mipelo", right);
+        transform: scaleX(-1);
+
+        .titles {
+            left: 0;
+            transform: scaleX(-1);
+        }
+    }
+
+    &__peinados {
+        @include section-bg("peinados", left);
+
+        .titles {
+            right: 0;
+        }
+    }
+}
+
+
+/* Peinados Page */
+
+.peinados {
+    &__imgs {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 2em;
+        margin-top: 20px;
+
+        &__item {
+            border-radius: 25px;
+            position: relative;
+            cursor: pointer;
+            background-color: $primary-color;
+
+            &:after {
+                content: "";
+                display: block;
+                padding-bottom: 100%;
+            }
+
+            &__float {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                border: 6px solid $primary-color;
+                transition: transform 0.5s ease;
+                overflow: hidden;
+                cursor: pointer;
+                border-radius: 25px;
+
+                @for $i from 1 through 9 {
+                    &--#{$i} {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+
+                        @if $i < 3 {
+                            left: -110px;
+                        } @else if $i == 6 {
+                            width: 100%;
+                        } @else if $i == 9 {
+                            height: 135%;
+                            left: -70px;
+                            top: -20px;
+                        } 
+                    }
+                }
+            }
+
+            &:hover &__float {
+                transform: translate(-15px, -15px);
+            }
+        }
+    }
+}

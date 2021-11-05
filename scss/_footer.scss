@@ -1,0 +1,20 @@
+/* Footer */
+
+.footer {
+    background-color: $primary-color;
+    background: $bg-gradient;
+    color: #fff;
+
+    &__logo-box {
+        max-width: min-content;
+    }
+
+    &__social-media-links * {
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:hover {
+            transform: translate(5px, 5px);
+        }
+    }
+}

@@ -1,0 +1,183 @@
+* {
+  font-family: sistem-ui, sans-serif; }
+
+/* Variables */
+/* Header */
+.nav {
+  background-color: #480ca8;
+  background: linear-gradient(90deg, #8b1aaf, #8200ff); }
+  .nav__logo {
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 800 !important; }
+
+.cover-page {
+  background: url("../img/portadas/portada.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 2em;
+  color: #fff;
+  height: 100vh; }
+  .cover-page h1 {
+    font-size: 3em;
+    font-weight: bold;
+    /* margin: 1% 2%; */ }
+
+/* Main */
+/* Home Page */
+.home section {
+  position: relative;
+  height: 40em;
+  padding: 10vw; }
+  .home section .titles {
+    font-style: italic;
+    font-size: 3em;
+    position: absolute;
+    color: #56378b;
+    background: rgba(235, 239, 242, 0.658);
+    padding: 25px;
+    border-radius: 15px;
+    top: 2em;
+    margin: 10vw; }
+    .home section .titles a {
+      color: #480ca8;
+      transition: color 0.3s ease-in; }
+      .home section .titles a:hover {
+        color: #ffffff; }
+
+.home__suciencia {
+  background: #ebeff2;
+  background: url("../img/portadas/suciencia.jpg") no-repeat left center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transform: scaleX(-1); }
+  .home__suciencia .titles {
+    right: 0;
+    transform: scaleX(-1); }
+
+.home__micorte {
+  background: #ebeff2;
+  background: url("../img/portadas/micorte.jpg") no-repeat left center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .home__micorte .titles {
+    left: 0; }
+
+.home__mipelo {
+  background: #ebeff2;
+  background: url("../img/portadas/mipelo.jpg") no-repeat right center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transform: scaleX(-1); }
+  .home__mipelo .titles {
+    left: 0;
+    transform: scaleX(-1); }
+
+.home__peinados {
+  background: #ebeff2;
+  background: url("../img/portadas/peinados.jpg") no-repeat left center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .home__peinados .titles {
+    right: 0; }
+
+/* Peinados Page */
+.peinados__imgs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2em;
+  margin-top: 20px; }
+  .peinados__imgs__item {
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    background-color: #480ca8; }
+    .peinados__imgs__item:after {
+      content: "";
+      display: block;
+      padding-bottom: 100%; }
+    .peinados__imgs__item__float {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border: 6px solid #480ca8;
+      transition: transform 0.5s ease;
+      overflow: hidden;
+      cursor: pointer;
+      border-radius: 25px; }
+      .peinados__imgs__item__float--1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        left: -110px; }
+      .peinados__imgs__item__float--2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        left: -110px; }
+      .peinados__imgs__item__float--3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%; }
+      .peinados__imgs__item__float--4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%; }
+      .peinados__imgs__item__float--5 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%; }
+      .peinados__imgs__item__float--6 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%; }
+      .peinados__imgs__item__float--7 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%; }
+      .peinados__imgs__item__float--8 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%; }
+      .peinados__imgs__item__float--9 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        height: 135%;
+        left: -70px;
+        top: -20px; }
+    .peinados__imgs__item:hover .peinados__imgs__item__float {
+      transform: translate(-15px, -15px); }
+
+/* Footer */
+.footer {
+  background-color: #480ca8;
+  background: linear-gradient(90deg, #8b1aaf, #8200ff);
+  color: #fff; }
+  .footer__logo-box {
+    max-width: min-content; }
+  .footer__social-media-links * {
+    cursor: pointer;
+    transition: all 0.2s; }
+    .footer__social-media-links *:hover {
+      transform: translate(5px, 5px); }

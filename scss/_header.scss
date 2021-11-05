@@ -1,0 +1,33 @@
+/* Header */
+
+.nav {
+    background-color: $primary-color;
+    background: $bg-gradient;
+
+    &__logo {
+        color: #fff !important;
+        text-decoration: none;
+        font-weight: 800 !important;
+    }
+}
+
+.cover-page {
+    background: url($portada) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 2em;
+    color: #fff;
+    height: 100vh;
+
+    h1 {
+        font-size: 3em;
+        font-weight: bold;
+        /* margin: 1% 2%; */
+    }
+}
+
+
+
+

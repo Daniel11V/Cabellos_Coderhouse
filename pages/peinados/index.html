@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cabellos</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Bootstrap 5 -->
@@ -15,11 +15,12 @@
 </head>
 
 <body>
+
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="nav navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand nav-item" href="../index.html">Cabellos</a>
+                <a class="navbar-brand nav__logo" href="../../index.html">Cabellos</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -27,59 +28,80 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav fw-bolder">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                        <a class="nav-link" href="peinados.html">Peinados</a>
-                        <a class="nav-link" href="suciencia.html">SuCiencia</a>
-                        <a class="nav-link" href="mipelo.html">MiPelo</a>
-                        <a class="nav-link" href="micorte.html">MiCorte</a>
+                        <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
+                        <a class="nav-link" href="../peinados/">Peinados</a>
+                        <a class="nav-link" href="../suciencia/">SuCiencia</a>
+                        <a class="nav-link" href="../mipelo/">MiPelo</a>
+                        <a class="nav-link" href="../micorte/">MiCorte</a>
                     </div>
                 </div>
             </div>
         </nav>
         <div class="cover-page">
-            <h1 class="pt-3 ps-4 fw-bold display-2">MiCorte</h1>
-            <!-- <img src="" alt=""> -->
+            <h1 class="pt-3 ps-4 fw-bold display-2">SuCiencia</h1>
         </div>
     </header>
 
     <!-- Main -->
-    <main class="container my-5">
-        <form action="">
-            <fieldset>
-                <legend>
-                    Crea un ticket para comunicar al peluquero el estilo de tu corte
-                </legend>
-                <label for="name">Nombre</label><br>
-                <input type="text" name="name"></input><br><br>
-
-                <label for="sexo">Sexo</label><br>
-                <input type="radio" name="sexo" value="hombre">Hombre</input><br>
-                <input type="radio" name="sexo" value="mujer">Mujer</input><br><br>
-
-                <label for="typeHair">Tipo de pelo</label><br>
-                <select name="typeHair" id="">
-                    <option value="1">Liso</option>
-                    <option value="2">Ondulado</option>
-                    <option value="3">Rizado</option>
-                    <option value="4">Crespo</option>
-                </select><br><br>
-
-                <input type="checkbox" name="cash" value="yes">Pagare en efectivo<br><br>
-
-                <input type="reset" value="Reiniciar Formulario">
-                <input type="submit" value="Crear Ticket">
-            </fieldset>
-        </form>
-    </main><br>
+    <main class="container my-5 peinados">
+        <h2>Descubre la variedad de opciones</h2>
+        <div class="peinados__imgs">
+            <div class="peinados__imgs__item">
+                <div class="peinados__imgs__item__float">
+                    <img src="../../img/peinados/1.jpg" alt="peinado 1" class="peinados__imgs__item__float--1" />
+                </div>
+            </div>
+            <div class="peinados__imgs__item">
+                <div class="peinados__imgs__item__float">
+                    <img src="../../img/peinados/2.jpg" alt="peinado 2" class="peinados__imgs__item__float--2" />
+                </div>
+            </div>
+            <div class="peinados__imgs__item">
+                <div class="peinados__imgs__item__float">
+                    <img src="../../img/peinados/3.jpg" alt="peinado 3" class="peinados__imgs__item__float--3" />
+                </div>
+            </div>
+            <div class="peinados__imgs__item">
+                <div class="peinados__imgs__item__float">
+                    <img src="../../img/peinados/4.jpg" alt="peinado 4" class="peinados__imgs__item__float--4" />
+                </div>
+            </div>
+            <div class="peinados__imgs__item">
+                <div class="peinados__imgs__item__float">
+                    <img src="../../img/peinados/5.jpg" alt="peinado 5" class="peinados__imgs__item__float--5" />
+                </div>
+            </div>
+            <div class="peinados__imgs__item">
+                <div class="peinados__imgs__item__float">
+                    <img src="../../img/peinados/6.jpg" alt="peinado 6" class="peinados__imgs__item__float--6" />
+                </div>
+            </div>
+            <div class="peinados__imgs__item">
+                <div class="peinados__imgs__item__float">
+                    <img src="../../img/peinados/7.jpg" alt="peinado 7" class="peinados__imgs__item__float--7" />
+                </div>
+            </div>
+            <div class="peinados__imgs__item">
+                <div class="peinados__imgs__item__float">
+                    <img src="../../img/peinados/8.jpg" alt="peinado 8" class="peinados__imgs__item__float--8" />
+                </div>
+            </div>
+            <div class="peinados__imgs__item">
+                <div class="peinados__imgs__item__float">
+                    <img src="../../img/peinados/9.jpg" alt="peinado 9" class="peinados__imgs__item__float--9" />
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!-- Footer -->
-    <footer class="container-fluid">
+    <footer class="footer container-fluid">
         <div class="row row-cols-1 row-cols-sm-2 py-3 px-2 justify-content-between align-items-center">
             <div class="col-12 col-sm-6 col-lg-5 col-xl-4 mb-3">
                 <!-- logo -->
-                <div class="logo-box mx-auto">
+                <div class="footer_logo-box mx-auto">
                     <div class="logo fw-bold display-1">Cabellos</div>
-                    <div id="social-media-links" class="row justify-content-between m-0">
+                    <div class="footer__social-media-links row justify-content-between m-0">
                         <!-- Social Media Links -->
                         <i class="fab fa-twitter fa-2x col-2"></i>
                         <i class="fab fa-facebook fa-2x col-2"></i>
