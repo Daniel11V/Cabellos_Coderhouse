@@ -32,15 +32,6 @@
         }
     }
 
-    @mixin section-bg ($section, $direction) {
-        background: rgb(235,239,242);
-        background: url("../img/portadas/#{$section}.jpg") no-repeat $direction center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-
     &__suciencia {
         @include section-bg("suciencia", left);
         transform: scaleX(-1);

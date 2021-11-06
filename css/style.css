@@ -2,6 +2,7 @@
   font-family: sistem-ui, sans-serif; }
 
 /* Variables */
+/* Mixin */
 /* Header */
 .nav {
   background-color: #480ca8;
@@ -12,6 +13,7 @@
     font-weight: 800 !important; }
 
 .cover-page {
+  background: #D9BCA3;
   background: url("../img/portadas/portada.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;

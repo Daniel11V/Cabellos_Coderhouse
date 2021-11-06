@@ -12,11 +12,7 @@
 }
 
 .cover-page {
-    background: url($portada) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    @include section-bg("portada", center);
     font-size: 2em;
     color: #fff;
     height: 100vh;
