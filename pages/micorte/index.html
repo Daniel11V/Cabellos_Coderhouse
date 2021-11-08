@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="PELO, PELUQUERIA, CORTAR, CABELLO, LAVAR, PEINAR, TEÑIR, BARBA">
+    <meta name="description"
+        content="Crea un ticket de forma sencilla y rápida y que el peluquero sepa con precisión cómo plasmar tu estilo">
     <title>Cabellos | MiCorte</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -37,46 +40,58 @@
             </div>
         </nav>
         <div class="cover-page">
-            <h1 class="pt-3 ps-4 fw-bold display-2">SuCiencia</h1>
+            <h1 class="pt-3 ps-4 fw-bold display-2">MiCorte</h1>
         </div>
     </header>
 
     <!-- Main -->
     <main class="container my-5">
-        <form action="">
-            <fieldset>
-                <legend>
-                    Crea un ticket para comunicar al peluquero el estilo de tu corte
-                </legend>
-                <label for="name">Nombre</label><br>
-                <input type="text" name="name"></input><br><br>
-
-                <label for="sexo">Sexo</label><br>
-                <input type="radio" name="sexo" value="hombre">Hombre</input><br>
-                <input type="radio" name="sexo" value="mujer">Mujer</input><br><br>
-
-                <label for="typeHair">Tipo de pelo</label><br>
-                <select name="typeHair" id="">
+        <form>
+            <legend>
+                Crea un ticket para comunicar al peluquero el estilo de tu corte
+            </legend>
+            <div class="mb-3">
+                <label for="name">Nombre</label>
+                <input type="text" class="form-control" name="name" />
+            </div>
+            <div class="mb-3">
+                <label for="typeHair">Tipo de Pelo</label>
+                <select name="typeHair" class="form-select">
                     <option value="1">Liso</option>
                     <option value="2">Ondulado</option>
                     <option value="3">Rizado</option>
                     <option value="4">Crespo</option>
-                </select><br><br>
-
-                <input type="checkbox" name="cash" value="yes">Pagare en efectivo<br><br>
-
-                <input type="reset" value="Reiniciar Formulario">
-                <input type="submit" value="Crear Ticket">
-            </fieldset>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="sexo">Sexo: </label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sexo" id="hombre">
+                    <label class="form-check-label" for="hombre">
+                        Hombre
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sexo" id="mujer" checked>
+                    <label class="form-check-label" for="mujer">
+                        Mujer
+                    </label>
+                </div>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" name="cash" id="cash" value="yes">
+                <label class="form-check-label" for="cash">Pagar en efectivo</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Crear Ticket</button>
         </form>
-    </main><br>
+    </main>
 
     <!-- Footer -->
     <footer class="footer container-fluid">
         <div class="row row-cols-1 row-cols-sm-2 py-3 px-2 justify-content-between align-items-center">
             <div class="col-12 col-sm-6 col-lg-5 col-xl-4 mb-3">
                 <!-- logo -->
-                <div class="footer_logo-box mx-auto">
+                <div class="footer__logo-box mx-auto">
                     <div class="logo fw-bold display-1">Cabellos</div>
                     <div class="footer__social-media-links row justify-content-between m-0">
                         <!-- Social Media Links -->
