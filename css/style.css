@@ -27,6 +27,10 @@
     font-weight: bold;
     /* margin: 1% 2%; */ }
 
+@media screen and (max-width: 576px) {
+  .cover-page h1 {
+    font-size: 60px; } }
+
 /* Main */
 /* Home Page */
 .home section {
