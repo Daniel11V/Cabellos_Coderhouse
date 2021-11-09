@@ -126,4 +126,14 @@
             }
         }
     }
+
+    @media (max-width: 576px) {
+        h2 {
+            margin-left: 25px;
+        }    
+        
+        &__imgs {
+            margin: 25px;
+        }       
+    }
 }

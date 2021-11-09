@@ -175,6 +175,12 @@
     .peinados__imgs__item:hover .peinados__imgs__item__float {
       transform: translate(-15px, -15px); }
 
+@media (max-width: 576px) {
+  .peinados h2 {
+    margin-left: 25px; }
+  .peinados__imgs {
+    margin: 25px; } }
+
 /* Footer */
 .footer {
   background-color: #480ca8;
